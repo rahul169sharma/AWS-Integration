@@ -1,13 +1,13 @@
 # AWS Integration
 1. Setup cloud environment
-  1. Create VPC with a Private Subnet (don't need to create NAT Gateway)
-  2. Create an EC2 instance in the subnet
-  3. Create IAM User (this will be used by the builder to authenticate in AWS CLI)
-    * Recommended: Grant user only the set of permissions required e.g. start/stop instance and scope it to the specific instance
-    * Make note of the Access Key and Secret Key
+    1. Create VPC with a Private Subnet (don't need to create NAT Gateway)
+    2. Create an EC2 instance in the subnet
+    3. Create IAM User (this will be used by the builder to authenticate in AWS CLI)
+        * Recommended: Grant user only the set of permissions required e.g. start/stop instance and scope it to the specific instance
+        * Make note of the Access Key and Secret Key
 2. Add the Access and Secret Keys to gitbhub by navigating to Settings > Secret
-  * Call Access Key `AWS_ACCESS_KEY`
-  * Call Secret Key `AWS_SECRET_KEY`
+    * Call Access Key `AWS_ACCESS_KEY`
+    * Call Secret Key `AWS_SECRET_KEY`
 3. Go to your git repository and create a YAML configuration under .github/workflows. An example
 ```
 name: AWS Integration
